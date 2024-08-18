@@ -38,8 +38,6 @@ const paperDarkTheme = {
     neutral30: '#929292',
     neutral40: '#1C1C1E',
     neutral50: '#000000',
-    textTabActive: '#70D7FF',
-    textTabInactive: '#C7C7CC',
   },
 };
 
