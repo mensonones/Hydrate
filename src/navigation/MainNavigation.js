@@ -2,7 +2,7 @@ import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 import StackNavigator from './Stack';
-import DetailsContainer from '../screens/Details/DetailsConatiner';
+import DetailsContainer from '../screens/Details/DetailsContainer';
 import TabBarIcon from '../components/TabBar/Icon/Icon';
 import TabBarLabel from '../components/TabBar/Label/Label';
 
