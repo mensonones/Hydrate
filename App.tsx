@@ -2,7 +2,7 @@ import React from 'react';
 import { useColorScheme } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { PaperProvider } from 'react-native-paper';
-import MainNavigation from './src/navigation/MainNavigation';
+import MainNavigation from './src/navigation/Main';
 
 // themes
 import { paperLightTheme, paperDarkTheme } from './src/themes/papertheme';
