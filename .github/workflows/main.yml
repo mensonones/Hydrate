@@ -46,13 +46,3 @@ jobs:
       run: |
         cd android
         ./gradlew assembleDebug
-
-    - name: Build iOS
-      if: matrix.os == 'macos-latest'
-      run: |
-        cd ios
-        xcodebuild -workspace YourApp.xcworkspace \
-                    -scheme YourApp \
-                    -sdk iphonesimulator \
-                    -configuration Debug \
-                    build
