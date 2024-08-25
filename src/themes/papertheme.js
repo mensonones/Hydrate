@@ -23,6 +23,8 @@ const paperLightTheme = {
     textTabInactive: '#7D7D7D',
     outline: 'transparent',
     underlineColor: 'transparent',
+    buttonBackground: '#54BEF0',
+    buttonBackgroundDisabled: '#c0c0c0',
   },
 };
 
@@ -45,6 +47,8 @@ const paperDarkTheme = {
     textTabInactive: '#C7C7CC',
     outline: 'transparent',
     underlineColor: 'transparent',
+    buttonBackground: '#70D7FF',
+    buttonBackgroundDisabled: '#1C1C1E',
   },
 };
 

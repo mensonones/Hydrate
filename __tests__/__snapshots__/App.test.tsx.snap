@@ -235,6 +235,7 @@ exports[`renders correctly 1`] = `
                                     "width": 52,
                                   }
                                 }
+                                testID="logo"
                               />
                               <View
                                 style={
@@ -246,54 +247,26 @@ exports[`renders correctly 1`] = `
                               >
                                 <Text
                                   style={
-                                    [
-                                      {
-                                        "textAlign": "left",
-                                      },
-                                      {
-                                        "color": "rgba(28, 27, 31, 1)",
-                                        "fontFamily": "System",
-                                        "fontWeight": "400",
-                                        "letterSpacing": 0,
-                                      },
-                                      {
-                                        "writingDirection": "ltr",
-                                      },
-                                      {
-                                        "color": "#000000",
-                                        "fontFamily": undefined,
-                                        "fontSize": 28,
-                                        "marginBottom": 8,
-                                        "marginLeft": 8,
-                                      },
-                                    ]
+                                    {
+                                      "color": "#000000",
+                                      "fontFamily": undefined,
+                                      "fontSize": 28,
+                                      "marginBottom": 8,
+                                      "marginLeft": 8,
+                                    }
                                   }
                                 >
                                   iHydrate
                                 </Text>
                                 <Text
                                   style={
-                                    [
-                                      {
-                                        "textAlign": "left",
-                                      },
-                                      {
-                                        "color": "rgba(28, 27, 31, 1)",
-                                        "fontFamily": "System",
-                                        "fontWeight": "400",
-                                        "letterSpacing": 0,
-                                      },
-                                      {
-                                        "writingDirection": "ltr",
-                                      },
-                                      {
-                                        "color": "#7D7D7D",
-                                        "fontFamily": undefined,
-                                        "fontSize": 17,
-                                        "marginBottom": 8,
-                                        "marginLeft": 8,
-                                      },
-                                    ]
+                                    {
+                                      "color": "#7D7D7D",
+                                      "fontFamily": undefined,
+                                      "fontSize": 17,
+                                      "marginBottom": 8,
+                                      "marginLeft": 8,
+                                    }
                                   }
                                 >
                                   Start with iHydrate to record and track your water intake daily based on your needs and stay hydrated
@@ -313,6 +286,7 @@ exports[`renders correctly 1`] = `
                                 style={
                                   {
                                     "backgroundColor": "#F2F2F7",
+                                    "borderRadius": 6,
                                     "flexDirection": "row",
                                     "width": "95%",
                                   }
@@ -321,13 +295,12 @@ exports[`renders correctly 1`] = `
                                 <View
                                   style={
                                     {
-                                      "borderRadius": 10,
                                       "borderWidth": 0,
                                       "flex": 1,
                                       "marginBottom": 2,
-                                      "marginTop": 2,
+                                      "marginTop": 0,
                                       "padding": 5,
-                                      "paddingLeft": 100,
+                                      "paddingLeft": 110,
                                     }
                                   }
                                 >
@@ -371,6 +344,7 @@ exports[`renders correctly 1`] = `
                                     }
                                   >
                                     <TextInput
+                                      accessibilityLabel="Weight Input"
                                       cursorColor="#54BEF0"
                                       editable={true}
                                       keyboardType="numeric"
@@ -417,62 +391,34 @@ exports[`renders correctly 1`] = `
                                       }
                                       testID="text-input-outlined"
                                       underlineColorAndroid="transparent"
-                                      value="0"
+                                      value=""
                                     />
                                   </View>
                                 </View>
                                 <Text
                                   style={
-                                    [
-                                      {
-                                        "textAlign": "left",
-                                      },
-                                      {
-                                        "color": "rgba(28, 27, 31, 1)",
-                                        "fontFamily": "System",
-                                        "fontWeight": "400",
-                                        "letterSpacing": 0,
-                                      },
-                                      {
-                                        "writingDirection": "ltr",
-                                      },
-                                      {
-                                        "color": "#000000",
-                                        "fontFamily": undefined,
-                                        "fontSize": 17,
-                                        "left": 12,
-                                        "position": "absolute",
-                                        "top": 15,
-                                      },
-                                    ]
+                                    {
+                                      "color": "#000000",
+                                      "fontFamily": undefined,
+                                      "fontSize": 17,
+                                      "left": 12,
+                                      "position": "absolute",
+                                      "top": 15,
+                                    }
                                   }
                                 >
                                   Body weight
                                 </Text>
                                 <Text
                                   style={
-                                    [
-                                      {
-                                        "textAlign": "left",
-                                      },
-                                      {
-                                        "color": "rgba(28, 27, 31, 1)",
-                                        "fontFamily": "System",
-                                        "fontWeight": "400",
-                                        "letterSpacing": 0,
-                                      },
-                                      {
-                                        "writingDirection": "ltr",
-                                      },
-                                      {
-                                        "color": "#000000",
-                                        "fontFamily": undefined,
-                                        "fontSize": 17,
-                                        "left": 180,
-                                        "position": "absolute",
-                                        "top": 15,
-                                      },
-                                    ]
+                                    {
+                                      "color": "#000000",
+                                      "fontFamily": undefined,
+                                      "fontSize": 17,
+                                      "left": 182,
+                                      "position": "absolute",
+                                      "top": 15,
+                                    }
                                   }
                                 >
                                   Kg
@@ -538,6 +484,7 @@ exports[`renders correctly 1`] = `
                                     testID="button-container"
                                   >
                                     <View
+                                      accessibilityLabel="Calculate Button"
                                       accessibilityRole="button"
                                       accessibilityState={
                                         {
@@ -589,6 +536,7 @@ exports[`renders correctly 1`] = `
                                               "justifyContent": "center",
                                             },
                                             {
+                                              "backgroundColor": "#c0c0c0",
                                               "height": 50,
                                               "width": "100%",
                                             },
@@ -608,6 +556,13 @@ exports[`renders correctly 1`] = `
                                                 "writingDirection": "ltr",
                                               },
                                               [
+                                                {
+                                                  "fontFamily": "System",
+                                                  "fontSize": 14,
+                                                  "fontWeight": "500",
+                                                  "letterSpacing": 0.1,
+                                                  "lineHeight": 20,
+                                                },
                                                 [
                                                   {
                                                     "marginHorizontal": 16,
@@ -631,11 +586,6 @@ exports[`renders correctly 1`] = `
                                                   },
                                                   undefined,
                                                 ],
-                                                {
-                                                  "color": "#7D7D7D",
-                                                  "fontFamily": undefined,
-                                                  "fontSize": 17,
-                                                },
                                               ],
                                             ]
                                           }
@@ -643,25 +593,11 @@ exports[`renders correctly 1`] = `
                                         >
                                           <Text
                                             style={
-                                              [
-                                                {
-                                                  "textAlign": "left",
-                                                },
-                                                {
-                                                  "color": "rgba(28, 27, 31, 1)",
-                                                  "fontFamily": "System",
-                                                  "fontWeight": "400",
-                                                  "letterSpacing": 0,
-                                                },
-                                                {
-                                                  "writingDirection": "ltr",
-                                                },
-                                                {
-                                                  "color": "#7D7D7D",
-                                                  "fontFamily": undefined,
-                                                  "fontSize": 17,
-                                                },
-                                              ]
+                                              {
+                                                "color": "#7D7D7D",
+                                                "fontFamily": undefined,
+                                                "fontSize": 17,
+                                              }
                                             }
                                           >
                                             Calculate Now
