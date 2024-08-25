@@ -1,0 +1,58 @@
+name: Hydrate CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+        os: [ubuntu-latest, macos-latest] # MacOS apenas se o build iOS for necessário
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Setup Yarn
+      run: corepack enable
+
+    - name: Install dependencies
+      run: yarn install
+
+    - name: Lint code
+      run: yarn lint
+
+    - name: Format code (Prettier)
+      run: yarn format
+
+    - name: Run tests
+      run: yarn test
+
+    - name: Build Android
+      if: matrix.os == 'ubuntu-latest'
+      run: |
+        cd android
+        ./gradlew assembleDebug
+
+    - name: Build iOS
+      if: matrix.os == 'macos-latest'
+      run: |
+        cd ios
+        xcodebuild -workspace YourApp.xcworkspace \
+                    -scheme YourApp \
+                    -sdk iphonesimulator \
+                    -configuration Debug \
+                    build
