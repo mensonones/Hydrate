@@ -1,10 +1,10 @@
 // hooks/useWaterIntake.test.js
-import { renderHook, act } from '@testing-library/react-hooks';
+import {renderHook, act} from '@testing-library/react-hooks';
 import useWaterIntake from './useWaterIntake';
 
 describe('useWaterIntake', () => {
   it('should calculate water intake correctly', () => {
-    const { result } = renderHook(() => useWaterIntake());
+    const {result} = renderHook(() => useWaterIntake());
 
     act(() => {
       result.current.onChangeText('70');
@@ -20,7 +20,7 @@ describe('useWaterIntake', () => {
   });
 
   it('should handle invalid input gracefully', () => {
-    const { result } = renderHook(() => useWaterIntake());
+    const {result} = renderHook(() => useWaterIntake());
 
     act(() => {
       result.current.onChangeText('abc');
@@ -31,7 +31,7 @@ describe('useWaterIntake', () => {
   });
 
   it('should display weight with comma', () => {
-    const { result } = renderHook(() => useWaterIntake());
+    const {result} = renderHook(() => useWaterIntake());
 
     act(() => {
       result.current.onChangeText('80.5');

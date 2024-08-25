@@ -5,7 +5,7 @@ import texts from '../../utils/texts';
 
 const OnboardingContainer = () => {
   const keyboardVisible = useKeyboardVisibility();
-  const { weight, waterIntake, onChangeText } = useWaterIntake();
+  const {weight, waterIntake, onChangeText} = useWaterIntake();
 
   return (
     <OnboardingView

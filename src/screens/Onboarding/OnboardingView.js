@@ -14,11 +14,15 @@ import Header from './components/Header';
 import InputSection from './components/InputSection';
 import ButtonSection from './components/ButtonSection';
 
-const OnboardingView = ({ keyboardVisible, weight, waterIntake, onChangeText, texts }) => {
-
+const OnboardingView = ({
+  keyboardVisible,
+  weight,
+  waterIntake,
+  onChangeText,
+  texts,
+}) => {
   const {colors} = useTheme();
   const styles = createStyles(colors);
-
 
   return (
     <KeyboardAvoidingView
@@ -26,8 +30,12 @@ const OnboardingView = ({ keyboardVisible, weight, waterIntake, onChangeText, te
       behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View style={styles.principalContainer}>
-        <Header styles={styles} appName={texts.appName} welcome={texts.welcome} />
-        <InputSection
+          <Header
+            styles={styles}
+            appName={texts.appName}
+            welcome={texts.welcome}
+          />
+          <InputSection
             styles={styles}
             keyboardVisible={keyboardVisible}
             weight={weight}

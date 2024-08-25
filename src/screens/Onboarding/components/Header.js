@@ -1,7 +1,7 @@
-import { View, Image, Text } from 'react-native';
+import {View, Image, Text} from 'react-native';
 import PropTypes from 'prop-types';
 import Logo from '../../../../assets/img/Appicon.png';
-const Header = ({ styles, appName, welcome }) => (
+const Header = ({styles, appName, welcome}) => (
   <View style={styles.secondaryContainer}>
     <Image source={Logo} style={styles.logo} testID="logo" />
     <View style={styles.tertiaryContainer}>

@@ -1,15 +1,20 @@
-import { View, Text } from 'react-native';
-import { TextInput } from 'react-native-paper';
+import {View, Text} from 'react-native';
+import {TextInput} from 'react-native-paper';
 import PropTypes from 'prop-types';
 
-const InputSection = ({ styles, keyboardVisible, weight, onChangeText, texts }) => (
+const InputSection = ({
+  styles,
+  keyboardVisible,
+  weight,
+  onChangeText,
+  texts,
+}) => (
   <View
     style={
       keyboardVisible
         ? styles.quaternaryContainerKeyboardOpened
         : styles.quaternaryContainer
-    }
-  >
+    }>
     <View style={styles.quinaryContainer}>
       <TextInput
         style={styles.input}
