@@ -1,4 +1,3 @@
-import React from 'react';
 import CalculateResultView from './CalculateResultView';
 
 const CalculateResultContainer = () => {

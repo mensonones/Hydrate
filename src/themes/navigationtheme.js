@@ -7,6 +7,7 @@ const navigationLightTheme = {
     primary: '#54BEF0',
     tabBarActiveTintColor: '#54BEF0',
     tabBarInactiveTintColor: '#7D7D7D',
+    background: '#FFFFFF',
   },
 };
 

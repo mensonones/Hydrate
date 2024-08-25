@@ -1,8 +1,14 @@
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import styles from './styles';
+import PropTypes from 'prop-types';
 
-const TabBarIcon = ({ iconName, size, color }) => {
+const TabBarIcon = ({iconName, size = 24, color}) => {
   return <Icon name={iconName} size={size} color={color} />;
+};
+
+TabBarIcon.propTypes = {
+  iconName: PropTypes.string.isRequired,
+  size: PropTypes.number,
+  color: PropTypes.string.isRequired,
 };
 
 export default TabBarIcon;

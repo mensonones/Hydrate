@@ -1,4 +1,4 @@
-import { Platform } from 'react-native';
+import {Platform} from 'react-native';
 
 const fonts = {
   regular: Platform.select({
@@ -8,7 +8,7 @@ const fonts = {
   medium: Platform.select({
     // ios: 'San Francisco-Medium',
     android: 'NotoSans-Medium',
-    }),
+  }),
   bold: Platform.select({
     // ios: 'San Francisco-Bold',
     android: 'NotoSans-Bold',

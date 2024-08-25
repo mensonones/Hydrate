@@ -8,9 +8,10 @@ const paperLightTheme = {
   // Specify custom property
   myOwnProperty: true,
   // Specify custom property in nested object
+  roundness: 5,
   colors: {
     ...DefaultTheme.colors,
-    myOwnColor: '#54BEF0',
+    primary: '#54BEF0',
     blue01: '#54BEF0',
     blue02: '#CAEEFF',
     neutral10: '#000000',
@@ -20,6 +21,8 @@ const paperLightTheme = {
     neutral50: '#FFFFFF',
     textTabActive: '#54BEF0',
     textTabInactive: '#7D7D7D',
+    outline: 'transparent',
+    underlineColor: 'transparent',
   },
 };
 
@@ -30,7 +33,7 @@ const paperDarkTheme = {
   // Specify custom property in nested object
   colors: {
     ...DarkTheme.colors,
-    myOwnColor: '#70D7FF',
+    primary: '#70D7FF',
     blue10: '#70D7FF',
     blue20: '#B8EBFF',
     neutral10: '#FFFFFF',
@@ -38,6 +41,10 @@ const paperDarkTheme = {
     neutral30: '#929292',
     neutral40: '#1C1C1E',
     neutral50: '#000000',
+    textTabActive: '#70D7FF',
+    textTabInactive: '#C7C7CC',
+    outline: 'transparent',
+    underlineColor: 'transparent',
   },
 };
 
